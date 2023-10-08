@@ -20,8 +20,8 @@ version: 2.1
 workflows:
   build_and_test_deploy:
     jobs:
-      - build
-      - test :
+       - build
+       - test :
           requires:
             - build
       - deploy :
